@@ -15,7 +15,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1>A Tiny React Sampler</h1>
-
+        <div id="outerSection">
+          <h2>Lists</h2>
+          <List />
+        </div>
         {/* <div id="outerSection">
           <h2>Functional Components</h2>
           <Greet />
