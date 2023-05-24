@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Nunito&display=swap");
+
+:root {
+  --dark: #232e21;
+  --light: whitesmoke;
+  --bright: #ffcc00;
+  --font-main: "Nunito", sans-serif;
+  --font-header: "Comfortaa", cursive;
+  font-size: 62.5%;
+}
+
+.App {
+  font-family: var(--font-main);
+  margin: auto;
+  text-align: center;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-headers);
+  text-shadow: var(--bright) 0 0 1px;
+}
+
+#outerSection {
+  text-align: center;
+  background-color: var(--light);
+  padding: 1.3em;
+  margin: 3em 7em;
+  border: 0.1em solid;
+  box-shadow: 5px 10px var(--dark);
+}
+
+#innerSection {
+  display: inline-block;
+  margin: 0.5em;
+  color: var(--light);
+  background-color: var(--dark);
+  width: 15em;
+  padding: 1em;
+  /* border: 1px dotted var(--dark); */
+  box-shadow: 0 0 10px 5px var(--dark);
+}
+
+button {
+  cursor: pointer;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 0.25em;
+  color: var(--dark);
+  background-color: var(--bright);
+  text-shadow: var(--bright) 0 0 1px;
+  box-shadow: 0 0 13px 5px var(--bright);
+}
