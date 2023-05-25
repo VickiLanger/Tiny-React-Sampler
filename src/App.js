@@ -9,13 +9,13 @@ import "./styles.css";
 // import EventBind from "./components/EventBind";
 // import ParentComponent from "./components/ParentComponent";
 // import UserGreeting from "./components/UserGreeting";
+import NameList from "./components/NameList";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <h1>A Tiny React Sampler</h1>
-
         {/* <div id="outerSection">
           <h2>Functional Components</h2>
           <Greet />
@@ -58,6 +58,10 @@ class App extends Component {
           <h2>Conditionals</h2>
           <UserGreeting />
         </div> */}
+        <div id="outerSection">
+          <h2>Rendering Mapped Arrays</h2>
+          <NameList />
+        </div>
       </div>
     );
   }
