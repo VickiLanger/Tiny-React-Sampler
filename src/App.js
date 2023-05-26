@@ -11,12 +11,24 @@ import "./styles.css";
 // import UserGreeting from "./components/UserGreeting";
 import NameList from "./components/NameList";
 import Stylesheet from "./components/Stylesheet";
+import Inline from "./components/Inline";
+import "./AppStyles.css";
+import styles from "./AppStyles.module.css";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <h1>A Tiny React Sampler</h1>
+        <div id="outerSection">
+          <h2>Styling</h2>
+          <Stylesheet primary={true} text="Text sent as props" />
+          <Inline />
+          <h3 className="error">I have an error class from AppStyles.css</h3>
+          <h3 className={styles.success}>
+            I get a success class from AppStyles.module.css
+          </h3>
+        </div>
         {/* <div id="outerSection">
           <h2>Functional Components</h2>
           <Greet />

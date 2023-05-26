@@ -1,0 +1,4 @@
+/* classes in modules are locally scoped. child components witll be inherited */
+.success {
+  color: green;
+}
