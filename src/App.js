@@ -14,7 +14,8 @@ import "./styles.css";
 // import Inline from "./components/Inline";
 import "./AppStyles.css";
 // import styles from "./AppStyles.module.css";
-import Form from "./components/Form";
+// import Form from "./components/Form";
+import LifecycleA from "./components/LifecycleA";
 
 class App extends Component {
   render() {
@@ -22,8 +23,8 @@ class App extends Component {
       <div className="App">
         <h1>A Tiny React Sampler</h1>
         <div id="outerSection">
-          <h2>Form Handling</h2>
-          <Form />
+          <h2>Component Lifecyle Methods</h2>
+          <LifecycleA />
         </div>
         {/* <div id="outerSection">
           <h2>Functional Components</h2>
@@ -79,7 +80,12 @@ class App extends Component {
           <h3 className={styles.success}>
             I get a success class from AppStyles.module.css
           </h3>
-        </div> */}
+        </div> 
+        <div id="outerSection">
+          <h2>Form Handling</h2>
+          <Form />
+        </div>
+        */}
       </div>
     );
   }
