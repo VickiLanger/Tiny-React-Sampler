@@ -41,7 +41,30 @@ LifecycleA componentDidMount
 ```
 
 ## Updating
-
+when component is rerendered due to change in props or state
+### `static getDerivedStateFromProps(props, state)`
+ - called every time a component is re-rendered
+ - sets the state
+ - not for side effects
+### `shouldComponentUpdate(nextProps, nextState)`
+ - dictates if component should re-render or not
+ - performance optimizing
+ - not for causing side effects
+### `render()`
+ - only req'd method in a class Component
+ - reads props and state then returns JSX
+ - not for changing state
+ - not for interacting with dom
+ - no ajax calls
+ ### `getSnapshotBeforeUpdate(prevProps, prevState)`
+ - called right before changes from virtual dom are reflected in actual dom
+ - get info from dom
+ - will return `null` or a value
+ - a returned value will be passed as a 3rd param to the next method
+### `componentDidUpdate(prevProps, prevState, snapshot)`
+ - called after `render` is done in the re-render cycles
+ - will only get called once
+ - can cause side effects here, after comparing `prevProps` with new props
 
 ## Unmounting
 
