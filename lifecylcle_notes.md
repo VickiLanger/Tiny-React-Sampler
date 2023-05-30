@@ -23,6 +23,10 @@
  - no ajax calls
  - child Components lifecycle methods are also executed
 
+### `componentDidMethod()`
+ - will only be called once
+ - runs immediately after component and it's children have been rendered
+ - this is the place to cause side effects (eg interact with dom, ajax calls, etc)
 
 ## Updating
 
