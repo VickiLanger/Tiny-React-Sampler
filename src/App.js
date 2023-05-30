@@ -9,11 +9,12 @@ import "./styles.css";
 // import EventBind from "./components/EventBind";
 // import ParentComponent from "./components/ParentComponent";
 // import UserGreeting from "./components/UserGreeting";
-import NameList from "./components/NameList";
-import Stylesheet from "./components/Stylesheet";
-import Inline from "./components/Inline";
+// import NameList from "./components/NameList";
+// import Stylesheet from "./components/Stylesheet";
+// import Inline from "./components/Inline";
 import "./AppStyles.css";
-import styles from "./AppStyles.module.css";
+// import styles from "./AppStyles.module.css";
+import Form from "./components/Form";
 
 class App extends Component {
   render() {
@@ -21,13 +22,8 @@ class App extends Component {
       <div className="App">
         <h1>A Tiny React Sampler</h1>
         <div id="outerSection">
-          <h2>Styling</h2>
-          <Stylesheet primary={true} text="Text sent as props" />
-          <Inline />
-          <h3 className="error">I have an error class from AppStyles.css</h3>
-          <h3 className={styles.success}>
-            I get a success class from AppStyles.module.css
-          </h3>
+          <h2>Form Handling</h2>
+          <Form />
         </div>
         {/* <div id="outerSection">
           <h2>Functional Components</h2>
@@ -70,11 +66,20 @@ class App extends Component {
         <div id="outerSection">
           <h2>Conditionals</h2>
           <UserGreeting />
-        </div> */}
+        </div>
         <div id="outerSection">
           <h2>Rendering Mapped Arrays</h2>
           <NameList />
         </div>
+        <div id="outerSection">
+          <h2>Styling</h2>
+          <Stylesheet primary={true} text="Text sent as props" />
+          <Inline />
+          <h3 className="error">I have an error class from AppStyles.css</h3>
+          <h3 className={styles.success}>
+            I get a success class from AppStyles.module.css
+          </h3>
+        </div> */}
       </div>
     );
   }
