@@ -11,9 +11,10 @@ import "./styles.css";
 // import UserGreeting from "./components/UserGreeting";
 // import NameList from "./components/NameList";
 // import Stylesheet from "./components/Stylesheet";
-import Inline from "./components/Inline";
+// import Inline from "./components/Inline";
 import "./AppStyles.css";
-import styles from "./AppStyles.module.css";
+// import styles from "./AppStyles.module.css";
+import Form from "./components/Form";
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
         <h1>A Tiny React Sampler</h1>
         <div id="outerSection">
           <h2>Form Handling</h2>
+          <Form />
         </div>
         {/* <div id="outerSection">
           <h2>Functional Components</h2>
